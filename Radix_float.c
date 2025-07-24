@@ -5,9 +5,6 @@
 #define MAX 100
 #define NUM_BITS 32
 
-int Negative_num_count = 0;
-int Positive_num_count = 0;
-
 const unsigned int NEGATIVE_POSITIVE_MASK = 1<<31;
 
 void radix_sort(unsigned int array[], int n, int k);
@@ -20,6 +17,9 @@ int main(){
     float Array_of_numbers[MAX];
     unsigned unsigned_arr[MAX];
     char yn_str[10];
+
+    int Negative_num_count = 0;
+    int Positive_num_count = 0;
 
     while(true){
         printf("%d: ", Number_counter+1);
